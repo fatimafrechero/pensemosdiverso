@@ -1,2 +1,0 @@
-# proyecto
- actividad 2
