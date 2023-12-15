@@ -12,9 +12,9 @@ header {
   justify-content: space-around;
 }
 
-img {
+.logoinicio {
   width: 15rem;
-  margin-right: 0%;
+  margin: 0%;
 }
 
 nav ul {
@@ -26,13 +26,26 @@ nav ul a {
   font-family: Arial, Helvetica, sans-serif;
   margin: 15px;
 }
+nav ul a:hover {
+  color: rgb(124, 28, 189);
+  transition: 1s;
+  margin-right: 2%;
+}
 
-.menu {
+.navbar bg-light .busqueda .d-flex {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
 }
-.menu img {
-  width: 2rem;
+.navbar bg-light .busqueda .d-flex .boton {
+  background-color: black;
+  text-decoration-color: white;
+}
+
+main div .portadainicio {
+  width: 100%;
+  margin: 10px;
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
