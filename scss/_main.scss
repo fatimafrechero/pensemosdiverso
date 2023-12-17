@@ -1,4 +1,6 @@
 main{
+    flex-wrap: wrap;
+min-width: 250px;
     div{
         .portadainicio{
     width: 100%;
@@ -6,6 +8,50 @@ main{
         opacity: 80%;}
         };
     };
+  main{
+      
+section{
+    flex-wrap: wrap;
+min-width: 250px;
+    h2{
+       
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            color: white;}
 
-    $placeholder-opacity-max:           .5;
-    $placeholder-opacity-min:           .2;
+    p{
+        flex-wrap: wrap;
+min-width: 250px;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        color: white;   
+        columns: 2;
+    }
+        
+    
+}
+}
+div{
+    section{
+        flex-wrap: wrap;
+    min-width: 250px;
+    iframe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            flex-wrap: wrap;
+    min-width: 250px;
+    
+        }
+    }
+    
+}
+
