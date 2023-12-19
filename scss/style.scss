@@ -1,11 +1,23 @@
+
+
 body{
     background-color: black;
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    box-sizing: border-box; }
+
+$breakpoint-small: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
 
 
+@media screen and (min-width: $breakpoint-small) and (min-height: 880px) {
 }
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+}
+
+@media screen and (min-width: $breakpoint-desktop) {}
 
 
 

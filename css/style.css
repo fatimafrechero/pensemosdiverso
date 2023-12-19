@@ -7,12 +7,9 @@ body {
 
 header {
   display: flex;
-  display: none;
   border-bottom: 1px solid gray;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  min-width: 250px;
 }
 
 .logoinicio {
@@ -42,8 +39,6 @@ nav ul a:hover {
 
 .navbar bg-light {
   display: none;
-  flex-wrap: wrap;
-  min-width: 250px;
 }
 .navbar bg-light .busqueda .d-flex {
   font-family: Arial, Helvetica, sans-serif;
