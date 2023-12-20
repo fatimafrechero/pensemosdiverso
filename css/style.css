@@ -1,13 +1,12 @@
 body {
-  background-color: black;
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: black;
+  border-bottom: 1px;
+  color: gray;
 }
-
 header {
   display: flex;
-  border-bottom: 1px solid gray;
   align-items: center;
   justify-content: space-around;
 }
@@ -18,18 +17,13 @@ header {
   padding: 0%;
 }
 
-nav {
-  display: none;
-  min-width: 250px;
-}
 nav ul {
   display: flex;
 }
 nav ul a {
   text-decoration: none;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 15px;
+  color: white;
 }
 nav ul a:hover {
   color: rgb(124, 28, 189);
@@ -50,10 +44,6 @@ nav ul a:hover {
   text-decoration-color: white;
 }
 
-main {
-  flex-wrap: wrap;
-  min-width: 250px;
-}
 main div .portadainicio {
   width: 100%;
   margin: 10px;
@@ -85,10 +75,6 @@ main section p {
   columns: 2;
 }
 
-div section {
-  flex-wrap: wrap;
-  min-width: 250px;
-}
 div section iframe {
   display: flex;
   justify-content: center;
