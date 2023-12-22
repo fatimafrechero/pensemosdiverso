@@ -3,7 +3,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   background:black;
-  border-bottom: 1px; color: gray;
+  color: beige;
+  margin: 0%;
+  padding: 0%;
 
 $breakpoint-small: 320px;
 $breakpoint-tablet: 768px;
@@ -20,9 +22,10 @@ $breakpoint-desktop: 1024px;
 }
 
 // Estilos para pantallas grandes (más de 1024px)
-@media screen and (min-width: $breakpoint-desktop) {
+@media screen and (min-width: $breakpoint-desktop) and (max-width: 3000px) {
 }
 }
 
 @import "_header";
 @import "_main";
+@import "_footer";

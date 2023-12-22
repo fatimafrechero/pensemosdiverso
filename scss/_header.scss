@@ -3,12 +3,13 @@ header{
 align-items: center;
 justify-content: space-around;
 }
+img{
 
-    .logoinicio{
         width: 15rem;
         margin: 0%;
-        padding: 0%;}
-
+        padding: 0%;
+        align-items: center;
+    }
 
     nav{
 
@@ -18,25 +19,45 @@ justify-content: space-around;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
+        margin: 10px;
+        transition: transform 0.3s ease;
 
 &:hover{ color:rgb(124, 28, 189);
-    transition: 1s;
-    margin-right: 2%;}
+    transform: scale(1.2);}
             }
         
     }
 }
 
 
-.navbar bg-light{
-    display: none;
-.busqueda {
-    .d-flex{font-family: Arial, Helvetica, sans-serif;
+.navbar {
+    &.bg-light {
+      background-color:purple; // Ajusta el color de fondo según tu diseño
+      // Otros estilos de la barra de navegación si los tienes
+    }
+  
+    .busqueda {
+      form {
         display: flex;
-    align-items: center;
-.boton { background-color: black;
-text-decoration-color: white;}
-}
-}
-
- }
+  
+        input.form-control {
+          // Estilos para el campo de búsqueda si es necesario
+          margin-right: 0%; // Espacio entre el campo de búsqueda y el botón
+        }
+  
+        button.boton {
+          // Estilos para el botón
+          background-color: gray; // Color de fondo del botón
+          color: #fff; // Color del texto del botón
+          border-radius: 1px; // Elimina el borde
+          padding: 6px 14px; // Ajusta el relleno del botón
+          cursor: pointer; // Cambia el cursor al pasar sobre el botón
+          &:hover {
+            background-color: purple; 
+            transition: 2s;
+          }
+  }
+      }
+    }
+  }
+  

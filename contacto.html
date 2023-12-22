@@ -19,35 +19,62 @@
                 <a href="contacto.html">Contacto</a>
             </ul>
             </nav>
+            <nav class="navbar bg-light">
+              <div class="busqueda">
+                <form role="Buscar">
+                  <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                  <button class="boton" type="submit">Buscar</button>
+                </form>
+              </div>
+            </nav>
+            
     </header>
 
-<form action="form.php" method="post">
-    <label for="">Nombre</label>
-    <input type="text" name="nombre" id="nombre">
-    <label for="">Apellido</label>
-    <input type="text" name="apellido" id="apellido">
-    <label for=>E-mail</label>
-    <input type="email" name="email" id="email">
+    <form action="form.php" method="post" class="mi-formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+      
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido">
+      
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email">
+  
+      <label for="comentarios">Comentarios</label>
+      <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+      
+      <input type="submit" value="Enviar">
+  </form>
+  
 
-    <p>Comentarios</p>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-   <input type="submit" value="Enviar">
-
-</form>
-
+<section class="ubicacion">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.963212117829!2d-64.30436602530096!3d-33.11005098015871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdffb8089fff01%3A0x8851f91e0b23b631!2sUniversidad%20Nacional%20de%20R%C3%ADo%20Cuarto!5e0!3m2!1ses-419!2sar!4v1703202167201!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
 
 <footer>
-    <img src="assets/logoenblanco.png" class="logoinicio" width=20%>
-<div>
-    <ul class="redes">
-        <a href="https://instagram.com/pensemosdiverso?igshid=OGQ5ZDc2ODk2ZA=="target="_blanck">Instagram</a> 
-        <a href="https://instagram.com/pensemosdiverso?igshid=OGQ5ZDc2ODk2ZA=="target="_blanck">Facebook</a>
-        <a href="https://www.youtube.com/@pensemosdiverso59"target="_blanck">YouTube</a>    
-    </ul>
 
-</div>
-</footer>
+
+    <div class="logofooter">
+        <img src="assets/logoenblanco.png" width=>
+    </div>
+    
+    <div class="redes">
+      <a href="https://instagram.com/pensemosdiverso?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+        <img src="assets/instagram.png" alt="Instagram">
+      </a> 
+    
+      <a href="https://instagram.com/pensemosdiverso?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+        <img src="assets/face.png" alt="Facebook">
+      </a>
+    
+      <a href="https://www.youtube.com/@pensemosdiverso59" target="_blank">
+        <img src="assets/yotube.png" alt="YouTube">
+      </a>
+    </div>
+    
+    
+    </footer>
 
 </body>
 </html>
