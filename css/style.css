@@ -1,11 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background: black;
-  color: beige;
+  color: white;
+  background-color: black;
   margin: 0%;
   padding: 0%;
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -64,6 +70,8 @@ nav ul a:hover {
   flex: 1;
   max-width: 50%;
   margin: 20px;
+  padding: 20px;
+  align-items: center;
 }
 .textoinicio .imagen {
   flex: 1;
@@ -76,11 +84,19 @@ nav ul a:hover {
 }
 .textoinicio h2 {
   font-size: 1.5rem;
-  margin: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+.textoinicio h2:hover {
+  color: purple;
+  transition: 2s;
 }
 .textoinicio p {
   font-size: 1rem;
   margin: 10px;
+  color: gray;
+  font-size: medium;
 }
 
 .videoinicio {
@@ -103,6 +119,16 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.capacitaciones h2:hover {
+  color: purple;
+  transition: 2s;
+}
+.capacitaciones p {
+  font-size: medium;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
 }
 
 .slider {
@@ -140,7 +166,6 @@ nav ul a:hover {
 }
 
 .carousel {
-  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -148,6 +173,8 @@ nav ul a:hover {
   width: 80%;
   height: auto;
   display: block;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 .carousel .carousel-item .carousel-caption {
@@ -158,45 +185,26 @@ nav ul a:hover {
 .carousel .carousel-item .carousel-caption h5 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-style: italic;
+}
+.carousel .carousel-item .carousel-caption:hover {
+  color: purple;
+  transition: 2s;
+}
+.carousel .carousel-item .carousel-caption .simone {
+  color: white;
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+  justify-content: center;
+}
+.carousel .carousel-item .carousel-caption .simone:hover {
+  color: purple;
+  transition: 2s;
 }
 .carousel .carousel-item .carousel-caption p {
   font-size: 1rem;
-}
-.carousel .carousel-control-prev,
-.carousel .carousel-control-next {
-  width: 5%;
-  background: none;
-  font-size: 30px;
-  color: #000;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-.carousel .carousel-control-prev:hover,
-.carousel .carousel-control-next:hover {
-  opacity: 0.8;
-}
-.carousel .carousel-control-prev-icon,
-.carousel .carousel-control-next-icon {
-  background-image: none;
-}
-
-.video2023 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin: 30px;
-}
-.video2023 .video-wrapper iframe {
-  width: 560px;
-  height: 315px;
-}
-.video2023 .text-wrapper {
-  text-align: center;
-}
-.video2023 .text-wrapper p {
-  font-size: 16px;
-  line-height: 1.6;
+  color: gray;
 }
 
 .ubicacion {
@@ -212,63 +220,156 @@ nav ul a:hover {
 .mi-formulario {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 400px;
-  margin: 0 auto;
+  margin: auto;
+  padding: 20px;
 }
-.mi-formulario label {
-  margin-bottom: 5px;
+
+label {
+  margin-bottom: 8px;
   font-weight: bold;
-  display: block;
 }
-.mi-formulario input[type=text],
-.mi-formulario input[type=email],
-.mi-formulario textarea {
+
+input[type=text],
+input[type=email],
+textarea {
   padding: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.mi-formulario input[type=text] input[type=submit],
-.mi-formulario input[type=email] input[type=submit],
-.mi-formulario textarea input[type=submit] {
+
+input[type=submit] {
   padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: white;
-  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
   transition: background-color 0.3s ease;
+}
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+.video2023,
+.docuredes,
+.spot2022,
+.esi,
+.leymicaela,
+.idgenero {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.video2023 h3,
+.docuredes h3,
+.spot2022 h3,
+.esi h3,
+.leymicaela h3,
+.idgenero h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+  font-size: 24px;
 }
-.mi-formulario input[type=text] input[type=submit]:hover,
-.mi-formulario input[type=email] input[type=submit]:hover,
-.mi-formulario textarea input[type=submit]:hover {
-  background-color: purple;
+.video2023 h3:hover,
+.docuredes h3:hover,
+.spot2022 h3:hover,
+.esi h3:hover,
+.leymicaela h3:hover,
+.idgenero h3:hover {
+  color: purple;
+  transition: 2s;
 }
-.mi-formulario .nosotrxs {
+.video2023 p,
+.docuredes p,
+.spot2022 p,
+.esi p,
+.leymicaela p,
+.idgenero p {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+}
+.video2023 .documentalespg,
+.docuredes .documentalespg,
+.spot2022 .documentalespg,
+.esi .documentalespg,
+.leymicaela .documentalespg,
+.idgenero .documentalespg {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+.video2023 .documentalespg iframe,
+.docuredes .documentalespg iframe,
+.spot2022 .documentalespg iframe,
+.esi .documentalespg iframe,
+.leymicaela .documentalespg iframe,
+.idgenero .documentalespg iframe {
+  width: 100%;
+  height: 315px;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.video-wrapper iframe {
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .video2023 .documentalespg,
+  .docuredes .documentalespg,
+  .spot2022 .documentalespg,
+  .esi .documentalespg,
+  .leymicaela .documentalespg,
+  .idgenero .documentalespg {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.nosotrxs {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
-.mi-formulario .nosotrxs h2 {
+.nosotrxs h2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
-  margin: 10px;
 }
-.mi-formulario .nosotrxs h2:hover {
-  background-color: purple;
-  transition: 2s;
+.nosotrxs h2:hover {
+  color: purple;
+  transition: color 2s;
 }
-.mi-formulario .nosotrxs p {
+.nosotrxs p {
   font-size: 16px;
-  color: lightslategrey;
-  text-align: center;
+  color: grey;
+  text-align: justify;
   margin-bottom: 20px;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-image: url(assets/algunes.jpg);
 }
 
 footer {
@@ -305,6 +406,14 @@ footer {
 .redes a img:hover {
   transform: scale(1.2);
   color: purple;
+}
+
+header {
+  border-bottom: 1px solid gray;
+}
+
+footer {
+  border-top: 1px solid gray;
 }
 
 /*# sourceMappingURL=style.css.map */

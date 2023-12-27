@@ -32,8 +32,7 @@ img{
 
 .navbar {
     &.bg-light {
-      background-color:purple; // Ajusta el color de fondo según tu diseño
-      // Otros estilos de la barra de navegación si los tienes
+      background-color:purple; 
     }
   
     .busqueda {
@@ -41,17 +40,16 @@ img{
         display: flex;
   
         input.form-control {
-          // Estilos para el campo de búsqueda si es necesario
-          margin-right: 0%; // Espacio entre el campo de búsqueda y el botón
+          margin-right: 0%; 
         }
   
         button.boton {
-          // Estilos para el botón
-          background-color: gray; // Color de fondo del botón
-          color: #fff; // Color del texto del botón
-          border-radius: 1px; // Elimina el borde
-          padding: 6px 14px; // Ajusta el relleno del botón
-          cursor: pointer; // Cambia el cursor al pasar sobre el botón
+      
+          background-color: gray; 
+          color: #fff; // 
+          border-radius: 1px; 
+          padding: 6px 14px; 
+          cursor: pointer; 
           &:hover {
             background-color: purple; 
             transition: 2s;

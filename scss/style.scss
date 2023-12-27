@@ -1,31 +1,25 @@
 
+$breakpoint-small: 600px;
+$breakpoint-medium: 900px;
+$breakpoint-large: 1200px;
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background:black;
-  color: beige;
+  color: white;
+  background-color: black;
   margin: 0%;
   padding: 0%;
-
-$breakpoint-small: 320px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
-
-// Estilos para pantallas pequeñas (mínimo 320px x 880px)
-@media screen and (min-width: $breakpoint-small) and (min-height: 880px) {
-
 }
 
-// Estilos para tabletas (entre 768px y 1024px)
-@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-// Estilos para pantallas grandes (más de 1024px)
-@media screen and (min-width: $breakpoint-desktop) and (max-width: 3000px) {
-}
-}
+  @import "_header";
+  @import "_main";
+  @import "_footer";
 
-@import "_header";
-@import "_main";
-@import "_footer";
+
+
